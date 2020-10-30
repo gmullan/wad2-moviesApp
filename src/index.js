@@ -84,7 +84,7 @@ const sample = {
   vote_count: 9692
 };
 
-const movies = [sample, sample, sample, sample, sample];
+const movies = [sample, sample, sample];
 
 const App = () => {
   return (

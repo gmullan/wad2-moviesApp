@@ -103,6 +103,6 @@ storiesOf("Home Page/Header", module).add("default", () => (
 
 storiesOf("Home Page/MovieList", module)
   .add("default", () => {
-    const movies= [sample, sample, sample]
+    const movies= [sample, sample, sample, sample, sample]
     return <MovieList movies={movies} />
 });
