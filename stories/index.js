@@ -15,66 +15,93 @@ const sample = {
   backdrop_path: "/5Iw7zQTHVRBOYpA0V6z0yypOPZh.jpg",
   belongs_to_collection: {
     id: 10,
-    name: "Star Wars Collection",
+    name: "Batman Collection",
     poster_path: "/iTQHKziZy9pAAY4hHEDCGPaOvFC.jpg",
     backdrop_path: "/d8duYyyC9J5T825Hg7grmaabfxQ.jpg"
   },
-  budget: 200000000,
+  budget: 55000000,
   genres: [
+   
     {
-      id: 14,    },
-    {
-      id: 12,
-      name: "Adventure"
+      id: 80,
+      name: "Crime"
     },
     {
-      id: 878,
-      name: "Science Fiction"
+      id: 53,
+      name: "Thriller"
     },
     {
-      id: 28,
-      name: "Action"
+      id: 18,
+      name: "Drama"
     }
   ],
   homepage:
-    "https://www.starwars.com/films/star-wars-episode-viii-the-last-jedi",
+    "http://www.jokermovie.net/",
   id: 181808,
-  imdb_id: "tt2527336",
+  imdb_id: "tt7286456",
   original_language: "en",
-  original_title: "Star Wars: The Last Jedi",
+  original_title: "Joker",
   overview:
-    "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.",
+    "During the 1980s, a failed stand-up comedian is driven insane and turns to a life of crime and chaos in Gotham City while becoming an infamous psychopathic figure",
   popularity: 44.208,
   poster_path: "/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
   production_companies: [
     {
       id: 1,
       logo_path: "/o86DbpburjxrqAzEDhXZcyE8pDb.png",
-      name: "Lucasfilm",
+      name: "DC Enterainment",
       origin_country: "US"
     },
     {
       id: 11092,
       logo_path: null,
-      name: "Ram Bergman Productions",
+      name: "Warner Bros. Pictures",
+      origin_country: "US"
+    },
+    {
+      id: 11092,
+      logo_path: null,
+      name: "DC Comics",
+      origin_country: "US"
+    },
+    {
+      id: 11092,
+      logo_path: null,
+      name: "Joint Effort",
+      origin_country: "US"
+    },
+    {
+      id: 11092,
+      logo_path: null,
+      name: "Village Roadshow Pictures",
+      origin_country: "US"
+    },
+    {
+      id: 11092,
+      logo_path: null,
+      name: "Bron Studios",
       origin_country: "US"
     },
     {
       id: 2,
       logo_path: "/wdrCwmRnLFJhEoH8GSfymY85KHT.png",
-      name: "Walt Disney Pictures",
+      name: "Creative Wealth Media Finance",
       origin_country: "US"
     }
   ],
   production_countries: [
     {
-      iso_3166_1: "US",
+      iso_3166_2: "CA",
+      name: "Canada"
+    },
+    {
+      iso_3166_2: "US",
       name: "United States of America"
     }
   ],
-  release_date: "2017-12-13",
+  release_date: "2019-10-02",
   revenue: 1332459537,
-  runtime: 152,
+  runtime: 122,
   spoken_languages: [
     {
       iso_639_1: "en",

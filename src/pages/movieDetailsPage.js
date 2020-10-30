@@ -14,7 +14,7 @@ const MoviePage = ({ movie }) => {
               <img
                 src={
                   movie.poster_path
-                    ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+                    ? `https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg/${movie.poster_path}`
                     : "./film-poster-placeholder.png"
                 }
                 className="movie"
