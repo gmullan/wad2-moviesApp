@@ -13,6 +13,13 @@ const MovieHeader = ({ movie }) => {
             <FontAwesomeIcon icon={["fas", "home"]} size="1x" />
           </a>
         </h2>
+        <h2>
+          {movie.title}
+          {"  "}
+          <a href={movie.upcomingMovies}>
+            <FontAwesomeIcon icon={["fas", "home"]} size="1x" />
+          </a>
+        </h2>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import MoviePage from './pages/movieDetailsPage'
 import FavoriteMoviesPage from './pages/favouritesMoviesPage' 
 import MovieReviewPage from "./pages/movieReviewPage";
 import SiteHeader from './components/siteHeader'
-
+import UpcomingMovies from './pages/upcomingMovies'
 
 const App = () => {
   return (
@@ -20,6 +20,7 @@ const App = () => {
           <Route exact path="/movies/favorites" component={FavoriteMoviesPage} />
           <Route path="/movies/:id" component={MoviePage} />
           <Route path="/" component={HomePage} />
+          <Route path="/" component={UpcomingMovies} />
           <Redirect from="*" to="/" />
         </Switch>
       </div>

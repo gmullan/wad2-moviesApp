@@ -144,3 +144,22 @@ storiesOf("Movie Details Page/MovieHeader", module).add("default", () => (
   <MovieHeader movie={sample} />
 ));
 
+storiesOf("Upcoming Movies/MovieCard", module)
+  .add("default", () => <MovieCard movie={sample} />)
+  .add("exception", () => {
+    const sampleNoPoster = { ...sample, poster_path: undefined };
+    return <MovieCard movie={sampleNoPoster} />;
+  });
+
+storiesOf("Upcoming Movies/FilterControls", module)
+.add("default", () => <FilterControls /> );
+
+storiesOf("Upcoming Movies/Header", module).add("default", () => (
+  <MoviesHeader numMovies={10} />
+));
+
+storiesOf("Upcoming Movies/MovieList", module)
+  .add("default", () => {
+    const movies= [sample, sample, sample, sample, sample]
+    return <MovieList movies={movies} />
+});
