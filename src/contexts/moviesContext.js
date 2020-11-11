@@ -1,5 +1,6 @@
 import React, { useEffect, createContext, useReducer } from "react";
 import { getMovies } from "../api/tmdb-api";
+import { getMoviesUpcoming } from "../api/tmdb-api"
 
 export const MoviesContext = createContext(null);
 
@@ -13,6 +14,8 @@ const reducer = (state, action) => {
       };
     case "load":
       return { movies: action.payload.movies };
+    case "load-upcoming":
+        return { upcoming: action.payload.movies, movies: [...state.movies] };
     case "add-review":
         return {
             movies: state.movies.map((m) =>
@@ -20,6 +23,7 @@ const reducer = (state, action) => {
                 ? { ...m, review: action.payload.review }
                 : m
             ),
+            upcoming: [...state.upcoming],
           };
       break;
     default:
@@ -41,6 +45,13 @@ const MoviesContextProvider = (props) => {
   useEffect(() => {
     getMovies().then((movies) => {
       dispatch({ type: "load", payload: { movies } });
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    getMoviesUpcoming().then((movies) => {
+      dispatch({ type: "load-upcoming", payload: { movies } });
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
