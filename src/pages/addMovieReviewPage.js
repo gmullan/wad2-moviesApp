@@ -10,4 +10,4 @@ const ReviewFormPage = props => {
       </PageTemplate>
   );
 };
-export default ReviewFormPage
+export default ReviewFormPage;
